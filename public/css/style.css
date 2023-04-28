@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nadvar a{
+    color: #394867;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s ease-in-out;
+    margin-left: 20px;
+}
+#nadvar a:hover {
+    color:#1a4ebe;
+    border-bottom-color: #1a4ebe;
+}
+
+#forma{
+    position: absolute;
+    width: 750px;
+    z-index: 1;
+    margin: 10px 15em;
+}
+
+
+
+#logoMCF{
+    font-family: 'Monoton', cursive;
+    font-size: 200px;
+    font-weight: 500;
+    background: linear-gradient(to right, #9BA4B5, #8297bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 0px 14px rgba(199, 190, 190, 0.3);
+    z-index: 2;
+    margin: 0.8em auto  ;
+
+}
+
+#nombreMCF{
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    background: linear-gradient(to right, #9BA4B5, #8297bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 0px 14px rgba(199, 190, 190, 0.3);
+    margin: 11em 13em  ;
+    z-index: 3;
+}
