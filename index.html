@@ -15,8 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <!-- Animaciones -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
 </head>
 <body style="background-color: #F1F6F9;">    
     <!-- Nadvar --> 
@@ -35,7 +45,7 @@
               <a class="nav-link" href="#sobreNosotros" >Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Productos</a>
+              <a class="nav-link" href="#seccionProductos" >Productos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" >Contacto</a>
@@ -47,23 +57,121 @@
     <!-- Header -->
     <header>
       <div class="container d-flex">
-        <span id="logoMCF">M C F</span>
-        <span id="nombreMCF">dalli group S.A.</span>
-        <img src="./public/img/forma.png" alt="Forma para header" id="forma">
+        <span id="logoMCF" class="animate__animated animate__fadeInRight animate__delay-0.9s">M C F</span>
+        <span id="nombreMCF" class="animate__animated animate__bounceIn animate__delay-0.9s">Productos de alta calidad</span>
+        <img src="./public/img/graph (5).png" class="animate__animated animate__fadeIn animate__delay-1s	" alt="Forma para header" id="forma">
       </div>
     </header>
 
     <!-- Sobre nosotros-->
-    <section>
-      <div class="container mx-auto" id="sobreNosotros" style="background-color: black; margin-top: 10%;">
-        <div class="row row-30 justify-content-center">
-          <div class="col-sm-9 col-md-5 cube-classic-wrap" style="background-color: rgb(221, 8, 8);">
-            1 of 2
+    <section class="container">
+      <div class=" mx-auto" id="sobreNosotros">
+        <div class=" row row-30 justify-content-center">
+          <p class="linea"></p>
+          <div class=" col-sm-9 col-md-5 cube-classic-wrap" id="tituloSN" >
+            <p>Sobre <span>nosotros</span></p>
+            <img src="/public/img/undraw_team_up_re_84ok.svg" alt="Imagen svg sobre nosotros">
           </div>
-          <div class="col-md-7 col-lg-6 col-xl-5" style="background-color: blue;">
-            2 of 2
+          <div class=" col-md-7 col-lg-6 col-xl-5" id="textoSN">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut minus id, tempore culpa blanditiis corporis voluptatem deserunt voluptas nisi temporibus a quidem repudiandae, architecto hic explicabo nesciunt facilis quisquam fugiat. 
           </div>
       </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="container">
+      <div id="seccionProductos">
+      <h2>Productos</h2>
+      <div class=" row gx-4" id="productos">
+        <div class="col">
+          <div class="producto" >
+            <img src="http://scrp.com.ar/wp-content/uploads/2021/09/levadura-prensada-La-Cordobesa.png" alt="Levadura 10kg - La Cordobesa" id="fotoProducto">
+            <h5 class="nombreProducto">Levadura 10kg - La Cordobesa</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="https://laboutiquedelpanadero.com.ar/wp-content/uploads/2020/12/CORDOBESA-20kg.png" alt="Grasa bovina comestible 20kg - La Cordobesa" id="fotoProducto">
+            <h5 class="nombreProducto">Grasa bovina comestible 20kg - La Cordobesa</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/267/442/products/margarina-cordobesa-hojaldre-11-68431868e9727e702615945090229823-640-0.jpg" alt="Margarina hojaldre dura 20kg - La Cordobesa" id="fotoProducto">
+            <h5 class="nombreProducto">Margarina hojaldre dura 20kg - La Cordobesa</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="http://scrp.com.ar/wp-content/uploads/2021/09/Margarina-para-hojaldre-linea-B-Megan-400x284.jpg" alt="Margarina tapas Pre-cortada 20kg - Megan" id="fotoProducto">
+            <h5 class="nombreProducto">Margarina tapas Pre-cortada 20kg - Megan</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="http://scrp.com.ar/wp-content/uploads/2021/09/Margarina-para-reposteria-Reveca-400x284.jpg" alt="Margarina para repostería 20kg - Reveca" id="fotoProducto">
+            <h5 class="nombreProducto">Margarina para repostería 20kg - Reveca</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/267/442/products/margarina-cordobesa-hojaldre-11-68431868e9727e702615945090229823-640-0.jpg" alt="Margarina hojaldre dura 20kg - La Cordobesa" id="fotoProducto">
+            <h5 class="nombreProducto">Margarina hojaldre dura 20kg - La Cordobesa</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="https://www.distribuidoradelcentro.com.ar/wp-content/uploads/2022/04/Margarina-Masas-y-Batidos-LA-CORDOBESA.png" alt="Margarina para Masas y Batidos 20kg - La Cordobesa" id="fotoProducto">
+            <h5 class="nombreProducto">Margarina para Masas y Batidos 20kg - La Cordobesa</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/789/620/products/365061-6819ad55d27cdc4ed216587720079953-640-0.jpg" alt="Oleomargarina Tocoferol 20kg - La Cordobesa " id="fotoProducto">
+            <h5 class="nombreProducto">Oleomargarina Tocoferol 20kg - La Cordobesa</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/169/133/products/margarina-beltranmark-hojaldre-10-kg1-6077d225164488996415901839163170-480-0.png" alt="Emulsion hojaldre animal (placa) 10kg - Beltran Mark" id="fotoProducto">
+            <h5 class="nombreProducto">Emulsion hojaldre animal (placa) 10kg - Beltran Mark</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="/public/img/emulFina.jpeg" alt="Emulsion fina (placa) 10kg - Beltran Mark" id="fotoProducto">
+            <h5 class="nombreProducto">Emulsion fina (placa) 10kg - Beltran Mark</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="https://altapasteleria.ar/6827-home_default/dulce-de-leche-santa-maria-repostero-sin-tacc-x-10-kg.jpg" alt="Dulce de leche repostero 10kg - Santa Maria" id="fotoProducto">
+            <h5 class="nombreProducto">Dulce de leche repostero 10kg - Santa Maria</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+        <div class="col">
+          <div class="producto">
+            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/789/620/products/365061-6819ad55d27cdc4ed216587720079953-640-0.jpg" alt="Oleomargarina 20kg - La Cordobesa " id="fotoProducto">
+            <h5 class="nombreProducto">Oleomargarina 20kg - La Cordobesa</h5>
+          </div>
+          <p class="lineaP"></p>
+        </div>
+
+
+
+      </div>
+    </div>
     </section>
           
    <!-- JavaScript de Bootstrap -->

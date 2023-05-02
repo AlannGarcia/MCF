@@ -1,25 +1,29 @@
 *{
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 #nadvar a{
-    color: #394867;
+    color: #669787;
     font-weight: 500;
     border-bottom: 1px solid transparent;
     transition: border-bottom-color 0.3s ease-in-out;
     margin-left: 20px;
 }
 #nadvar a:hover {
-    color:#1a4ebe;
-    border-bottom-color: #1a4ebe;
+    color:#285943;
+    border-bottom-color: #285943;
 }
 
 #forma{
     position: absolute;
-    width: 750px;
+    width: 600px;
     z-index: 1;
-    margin: 10px 15em;
+    margin:3em 20em;
+    transform: rotate(90deg);
+    
+
 }
 
 
@@ -28,23 +32,106 @@
     font-family: 'Monoton', cursive;
     font-size: 200px;
     font-weight: 500;
-    background: linear-gradient(to right, #9BA4B5, #8297bd);
+    background: linear-gradient(to right, #295044, #2e7733);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 5px 0px 14px rgba(199, 190, 190, 0.3);
+    text-shadow: 10px 10px 14px rgba(17, 16, 16, 0.3);
     z-index: 2;
     margin: 0.8em auto  ;
+    
 
 }
 
 #nombreMCF{
     position: absolute;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: 40px;
-    background: linear-gradient(to right, #9BA4B5, #8297bd);
-    -webkit-background-clip: text;
+    background: linear-gradient(to right, #295044, #2e7733);
+    -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
-    text-shadow: 5px 0px 14px rgba(199, 190, 190, 0.3);
-    margin: 11em 13em  ;
+    text-shadow: 10px 5px 14px rgba(8, 0, 0, 0.3);
+    margin: 11em 10em  ;
     z-index: 3;
+}
+
+#sobreNosotros{
+    margin-top: 7%;
+}
+
+#tituloSN {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+}
+
+#tituloSN span{
+    color: #285943;
+}
+.linea {
+    border-top: 3px solid #8CD790;
+    position: absolute;
+    margin: 68px 10% ;
+    width: 30%;
+
+}
+
+#tituloSN img{
+    width: 12em;
+    margin-top: 1.2em;
+}
+
+#textoSN{
+    font-size: 30px;
+    margin-top: 12%;
+    font-family:'Lora', serif;
+
+}
+
+#seccionProductos{
+    margin-top: 10%;
+}
+
+#seccionProductos h2{
+    text-align: center;
+    color: #285943;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+}
+
+.producto {
+    width: 300px;
+    height: 350px;
+    margin-left: 3px;
+
+  }
+.producto:hover + .lineaP {
+    border-top: 5px solid #285943;
+    position: relative;
+  }
+
+#fotoProducto {
+    width: 300px;
+    height: 250px;
+    object-fit:cover;
+    z-index: 3;
+}
+
+.nombreProducto{
+    margin-top: 20px;
+    text-align: center;
+    color: #285943;
+    font-family:'Lora', serif;
+
+}
+
+.lineaP {
+    border-top: 5px solid #8CD790;
+    position: relative;
+    margin-bottom: 0%;
+
+}
+.col{
+    margin-bottom: 3%;
 }
