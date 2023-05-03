@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="public/img/icono.ico">
     <title>MFC</title>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -30,16 +31,16 @@
 </head>
 <body style="background-color: #F1F6F9;">    
     <!-- Nadvar --> 
-    <div class="container" id="ContenedorIncio">
+    <div class="container" id="ContenedorInicio">
       <nav class="navbar navbar-expand-lg navbar-light" style="background-color:trasparent;">
-        <a class="navbar-brand" href="#ContenedorIncio"><img src="./public/img/logo.png" alt="Logo de la empresa" style="width: 100px;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="#ContenedorInicio"><img src="./public/img/logo.png" alt="Logo de la empresa" style="width: 100px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto" style="font-size: 1.4em;" id="nadvar" >
             <li class="nav-item active">
-              <a class="nav-link" href="#ContenedorIncio" >Inicio</a>
+              <a class="nav-link" href="#ContenedorInicio" >Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sobreNosotros" >Sobre nosotros</a>
@@ -48,7 +49,7 @@
               <a class="nav-link" href="#seccionProductos" >Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Contacto</a>
+              <a class="nav-link" href="#contacto" >Contacto</a>
             </li>
           </ul>
         </div>
@@ -68,7 +69,7 @@
       <div class=" mx-auto" id="sobreNosotros">
         <div class=" row row-30 justify-content-center">
           <p class="linea"></p>
-          <div class=" col-sm-9 col-md-5 cube-classic-wrap" id="tituloSN" >
+          <div class=" col-sm-9 col-md-5 cube-classic-wrap " id="tituloSN" >
             <p>Sobre <span>nosotros</span></p>
             <img src="/public/img/undraw_team_up_re_84ok.svg" alt="Imagen svg sobre nosotros">
           </div>
@@ -81,101 +82,146 @@
     <!-- Productos -->
     <section class="container">
       <div id="seccionProductos">
-      <h2>Productos</h2>
+      <h2 >Productos</h2>
       <div class=" row gx-4" id="productos">
         <div class="col">
           <div class="producto" >
-            <img src="http://scrp.com.ar/wp-content/uploads/2021/09/levadura-prensada-La-Cordobesa.png" alt="Levadura 10kg - La Cordobesa" id="fotoProducto">
+            <img src="http://scrp.com.ar/wp-content/uploads/2021/09/levadura-prensada-La-Cordobesa.png" alt="Levadura 10kg - La Cordobesa" id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Levadura 10kg - La Cordobesa</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="https://laboutiquedelpanadero.com.ar/wp-content/uploads/2020/12/CORDOBESA-20kg.png" alt="Grasa bovina comestible 20kg - La Cordobesa" id="fotoProducto">
+            <img src="https://laboutiquedelpanadero.com.ar/wp-content/uploads/2020/12/CORDOBESA-20kg.png" alt="Grasa bovina comestible 20kg - La Cordobesa" id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Grasa bovina comestible 20kg - La Cordobesa</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/267/442/products/margarina-cordobesa-hojaldre-11-68431868e9727e702615945090229823-640-0.jpg" alt="Margarina hojaldre dura 20kg - La Cordobesa" id="fotoProducto">
+            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/267/442/products/margarina-cordobesa-hojaldre-11-68431868e9727e702615945090229823-640-0.jpg" alt="Margarina hojaldre dura 20kg - La Cordobesa" id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Margarina hojaldre dura 20kg - La Cordobesa</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="http://scrp.com.ar/wp-content/uploads/2021/09/Margarina-para-hojaldre-linea-B-Megan-400x284.jpg" alt="Margarina tapas Pre-cortada 20kg - Megan" id="fotoProducto">
+            <img src="http://scrp.com.ar/wp-content/uploads/2021/09/Margarina-para-hojaldre-linea-B-Megan-400x284.jpg" alt="Margarina tapas Pre-cortada 20kg - Megan" id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Margarina tapas Pre-cortada 20kg - Megan</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="http://scrp.com.ar/wp-content/uploads/2021/09/Margarina-para-reposteria-Reveca-400x284.jpg" alt="Margarina para repostería 20kg - Reveca" id="fotoProducto">
+            <img src="http://scrp.com.ar/wp-content/uploads/2021/09/Margarina-para-reposteria-Reveca-400x284.jpg" alt="Margarina para repostería 20kg - Reveca" id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Margarina para repostería 20kg - Reveca</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/267/442/products/margarina-cordobesa-hojaldre-11-68431868e9727e702615945090229823-640-0.jpg" alt="Margarina hojaldre dura 20kg - La Cordobesa" id="fotoProducto">
-            <h5 class="nombreProducto">Margarina hojaldre dura 20kg - La Cordobesa</h5>
-          </div>
-          <p class="lineaP"></p>
-        </div>
-        <div class="col">
-          <div class="producto">
-            <img src="https://www.distribuidoradelcentro.com.ar/wp-content/uploads/2022/04/Margarina-Masas-y-Batidos-LA-CORDOBESA.png" alt="Margarina para Masas y Batidos 20kg - La Cordobesa" id="fotoProducto">
+            <img src="https://www.distribuidoradelcentro.com.ar/wp-content/uploads/2022/04/Margarina-Masas-y-Batidos-LA-CORDOBESA.png" alt="Margarina para Masas y Batidos 20kg - La Cordobesa" id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Margarina para Masas y Batidos 20kg - La Cordobesa</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/789/620/products/365061-6819ad55d27cdc4ed216587720079953-640-0.jpg" alt="Oleomargarina Tocoferol 20kg - La Cordobesa " id="fotoProducto">
+            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/789/620/products/365061-6819ad55d27cdc4ed216587720079953-640-0.jpg" alt="Oleomargarina Tocoferol 20kg - La Cordobesa " id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Oleomargarina Tocoferol 20kg - La Cordobesa</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/169/133/products/margarina-beltranmark-hojaldre-10-kg1-6077d225164488996415901839163170-480-0.png" alt="Emulsion hojaldre animal (placa) 10kg - Beltran Mark" id="fotoProducto">
+            <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/169/133/products/margarina-beltranmark-hojaldre-10-kg1-6077d225164488996415901839163170-480-0.png" alt="Emulsion hojaldre animal (placa) 10kg - Beltran Mark" id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Emulsion hojaldre animal (placa) 10kg - Beltran Mark</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="/public/img/emulFina.jpeg" alt="Emulsion fina (placa) 10kg - Beltran Mark" id="fotoProducto">
+            <img src="/public/img/emulFina.jpeg" alt="Emulsion fina (placa) 10kg - Beltran Mark" id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Emulsion fina (placa) 10kg - Beltran Mark</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="https://altapasteleria.ar/6827-home_default/dulce-de-leche-santa-maria-repostero-sin-tacc-x-10-kg.jpg" alt="Dulce de leche repostero 10kg - Santa Maria" id="fotoProducto">
+            <img src="https://altapasteleria.ar/6827-home_default/dulce-de-leche-santa-maria-repostero-sin-tacc-x-10-kg.jpg" alt="Dulce de leche repostero 10kg - Santa Maria" id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Dulce de leche repostero 10kg - Santa Maria</h5>
           </div>
           <p class="lineaP"></p>
         </div>
         <div class="col">
           <div class="producto">
-            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/789/620/products/365061-6819ad55d27cdc4ed216587720079953-640-0.jpg" alt="Oleomargarina 20kg - La Cordobesa " id="fotoProducto">
+            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/789/620/products/365061-6819ad55d27cdc4ed216587720079953-640-0.jpg" alt="Oleomargarina 20kg - La Cordobesa " id="fotoProducto" onclick="zoomIn(this)">
             <h5 class="nombreProducto">Oleomargarina 20kg - La Cordobesa</h5>
           </div>
           <p class="lineaP"></p>
         </div>
-
-
-
       </div>
     </div>
     </section>
+
+    <!-- Contactanos-->
+     <section class="container" style="margin-top: 5%;" >
+        <div class=" mx-auto" id="contacto">
+          <div class=" row row-30 justify-content-center">
+            <div class=" col-sm-9 col-md-5 cube-classic-wrap " id="informacionContacto" >
+              <div class="info">
+                <div class="titulos">
+                  <img src="/public/img/telefono.png" alt="Icono de teléfono" width="30" class="logo">
+                  <h3 class="contactoTitulo">Llamenos</h3> 
+                </div>
+                <p class="contactoInfo">+54 1169738740</p>
+              </div>
+              <div class="info">
+                <div class="titulos">
+                  <img src="/public/img/ubicacion.png" alt="Icono de teléfono" width="30" class="logo">
+                  <h3 class="contactoTitulo">Ubicacion</h3>
+                </div>
+                <p class="contactoInfo">Cno. Gral. Manuel Belgrano km 10500, Buenos Aires, Provincia de Buenos Aires</p>
+              </div>
+              <div class="info">
+                <div class="titulos">
+                  <img src="/public/img/reloj.png" alt="Icono de teléfono" width="30" class="logo">
+                  <h3 class="contactoTitulo">Horarios de trabajo</h3>
+                </div>
+                <p class="contactoInfo">Lunes - Viernes  <span>8:00 am - 13:00 pm</span>  <br> Sabado - Domingo <span>Cerrado</span> </p>
+              </div>
+            </div>
+            <div class=" col-md-7 col-lg-6 col-xl-5" id="furmularioContacto">
+              <h2 class="tituloDeFormulario">Contactanos</h2>
+              <form action="submit-form.php" method="POST">
+                <input type="text" id="name" name="name" required placeholder="Nombre" >
+                <input type="email" id="email" name="email" required placeholder="Correo electronico">
+                <textarea id="message" name="message" required placeholder="Mensaje"></textarea>
+              
+                <button type="submit">Enviar</button>
+              </form>
+              
+            </div>
+        </div>
+     </section> 
+    
+    <!-- Mapa para encontrarlos -->
+    <section class="container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d52466.96985409935!2d-58.34452499771612!3d-34.72571538977736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m1!2sTu%20ubicaci%C3%B3!4m5!1s0x95a32d77ed1b0789%3A0x8dea5b6a6cf435b7!2sCno.%20Gral.%20Manuel%20Belgrano%20km%2010500%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.7319299!2d-58.327358!5e0!3m2!1ses!2sar!4v1683135611662!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapaGoogle"></iframe>
+    </section>
+    <!-- Boton para ir al inicio -->
+    <a href="#ContenedorInicio" class="btn-fixed">
+      <img src="/public/img/flecha-hacia-arriba.png" alt="Diseñado por https://www.flaticon.es/iconos-gratis/bitcoin-arriba de www.flaticon.es" srcset="">
+    </a>
+    
+  
           
    <!-- JavaScript de Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-zEJjP/lGOzGpZdLoO7/u9a6Q2gjz1XdSWF+HkxyE44nc5+/5ffqJ5NtD+th8JK5W" crossorigin="anonymous"></script>
+<!--Boostrap js-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="/public/js/main.js"></script>
 
 </body>
 </html>

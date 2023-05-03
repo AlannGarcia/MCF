@@ -19,7 +19,7 @@
 #forma{
     position: absolute;
     width: 600px;
-    z-index: 1;
+    z-index: 5;
     margin:3em 20em;
     transform: rotate(90deg);
     
@@ -36,7 +36,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 10px 10px 14px rgba(17, 16, 16, 0.3);
-    z-index: 2;
+    z-index: 7;
     margin: 0.8em auto  ;
     
 
@@ -51,9 +51,10 @@
     -webkit-text-fill-color: transparent;
     text-shadow: 10px 5px 14px rgba(8, 0, 0, 0.3);
     margin: 11em 10em  ;
-    z-index: 3;
+    z-index: 8;
 }
 
+/* sobreNosotros */
 #sobreNosotros{
     margin-top: 7%;
 }
@@ -85,9 +86,11 @@
     font-size: 30px;
     margin-top: 12%;
     font-family:'Lora', serif;
+    text-align: center;
 
 }
 
+/* Productos */
 #seccionProductos{
     margin-top: 10%;
 }
@@ -115,7 +118,7 @@
     width: 300px;
     height: 250px;
     object-fit:cover;
-    z-index: 3;
+    cursor: pointer;
 }
 
 .nombreProducto{
@@ -134,4 +137,157 @@
 }
 .col{
     margin-bottom: 3%;
+    max-width: 350px;
 }
+
+/* boton para inicio */
+.btn-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    background-color: #8CD790;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    animation-name: mover-botón;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+.btn-fixed img{
+    width: 40px;
+    margin-bottom: 0.4em;
+    align-items: center;
+}
+  @keyframes mover-botón {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  .btn-fixed:hover {
+    background-color: #285943;
+    
+  }
+  
+/* Info de contacto */
+  .titulos {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 30px;
+    margin-right: 13px;
+    
+  }
+  
+  .contactoTitulo{
+    font-size: 30px;
+    color: #285943;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    margin-top: 9px;
+  }
+
+  .contactoInfo {
+    font-family:'Lora', serif;
+    user-select:text;
+    font-size: 16px;
+  }
+
+  .contactoInfo span{
+    color: #285943;
+    font-weight: 600;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+#contacto{
+    box-shadow: 2px 2px 29px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px 20px;
+}
+
+/* Formulario */
+.tituloDeFormulario{
+    font-size: 30px;
+    color: #285943;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    margin-top: 9px;
+    text-align: center;
+    animation-name: mover-titulo;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+  @keyframes mover-titulo {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-4px);
+    }
+  }
+
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+  
+  input,
+  textarea {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom-color 0.2s ease-in-out;
+    margin-bottom: 14px;
+   
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-bottom-color: #285943;
+  }
+  
+  button {
+    background-color: #2e7733;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #285943;
+  }
+  
+  /* Mapa de google */
+  #mapaGoogle{
+    width: 50%;
+    margin-bottom: 20px;
+  }
