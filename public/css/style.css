@@ -1,8 +1,13 @@
+html{
+  scroll-behavior:smooth;
+}
 *{
     margin: 0;
     padding: 0;
     user-select: none;
+   
 }
+
 
 #nadvar a{
     color: #669787;
@@ -16,42 +21,24 @@
     border-bottom-color: #285943;
 }
 
-#forma{
-    position: absolute;
-    width: 600px;
-    z-index: 5;
-    margin:3em 20em;
-    transform: rotate(90deg);
-    
+#logoInicio{
+    width: 500px;
+    margin: 6% 33% ;
 
 }
 
-
-
-#logoMCF{
-    font-family: 'Monoton', cursive;
-    font-size: 200px;
-    font-weight: 500;
-    background: linear-gradient(to right, #295044, #2e7733);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 10px 10px 14px rgba(17, 16, 16, 0.3);
-    z-index: 7;
-    margin: 0.8em auto  ;
-    
-
+#contenedorLogoInicio{
+  padding-top: 2%;
+  margin-bottom: 10%;
 }
 
-#nombreMCF{
-    position: absolute;
-    font-family: 'Lora', serif;
-    font-size: 40px;
-    background: linear-gradient(to right, #295044, #2e7733);
-    -webkit-background-clip: text;  
-    -webkit-text-fill-color: transparent;
-    text-shadow: 10px 5px 14px rgba(8, 0, 0, 0.3);
-    margin: 11em 10em  ;
-    z-index: 8;
+#contenedorLogoInicio p{
+    margin-top: 0%;
+    margin-left: 36%;
+    color:#285943;
+    font-size: 34px;
+    font-family:'Lora', serif;
+    font-weight:500;
 }
 
 /* sobreNosotros */
@@ -78,16 +65,21 @@
 }
 
 #tituloSN img{
-    width: 12em;
+    width: 15em;
     margin-top: 1.2em;
 }
 
 #textoSN{
-    font-size: 30px;
-    margin-top: 12%;
+    font-size: 23px;
+    margin-top: 7%;
     font-family:'Lora', serif;
     text-align: center;
 
+}
+
+#textoSN span{
+  color: #285943;
+  font-weight: 600;
 }
 
 /* Productos */
@@ -101,6 +93,7 @@
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight:500;
+    margin-bottom: 3%;
 }
 
 .producto {
@@ -159,6 +152,7 @@
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    transition:0.6s;
 
 }
 .btn-fixed img{
@@ -287,7 +281,109 @@
   }
   
   /* Mapa de google */
+  #mapaConImg{
+    margin-bottom: 5%;
+  }
   #mapaGoogle{
-    width: 50%;
     margin-bottom: 20px;
   }
+
+  #imagenLocation img{
+    width: 400px;
+  }
+
+  #imagenLocation p{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+  }
+
+  #imagenLocation span{
+    color: #285943;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #1c232e;
+    color: #fff;
+    font-family:'Lora', serif;
+    font-size: 15px;
+    
+  }
+  .left {
+    margin-left: 10%;
+    
+  }
+  
+  .right {
+    margin-right: 10%;
+  }
+  
+
+  
+
+/* pantallas de 480 px o menos */
+@media only screen and (max-width: 420px) {
+  body{
+   
+      width: 100%;/* el contenedor ocupa todo el ancho de la pantalla */
+      height: 100vh;
+    
+  }
+  /* Forma con inicio */
+#logoInicio{
+  width: 300px;
+  margin: 6% 12% ;
+}
+
+#contenedorLogoInicio p{
+  font-size: 20px;
+  margin: 0% 19%;
+
+}
+
+/* sobre nosotros */
+#tituloSN img{
+  width: 7em;
+ 
+}
+
+
+/* mapa google img*/
+#mapaGoogle{
+  margin-bottom: 20px;
+}
+#mapaGoogle{
+  width: 100%;
+  height: 200px;
+}
+
+
+/* Footer */
+footer {
+  padding: 10px;
+  width: 100%;
+  background-color: #1c232e;
+  color: #fff;
+  font-size: 9px;
+  
+}
+.left {
+  margin-left: 4%;
+  
+}
+
+.right {
+  margin-right: 4%;
+}
+
+
+
+}

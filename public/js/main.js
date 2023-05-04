@@ -24,7 +24,7 @@ function zoomIn(img) {
     closeButton.innerHTML = "X";
     closeButton.style.position = "absolute";
     closeButton.style.top = "30px";
-    closeButton.style.right = "50px";
+    closeButton.style.right = "10%";
     closeButton.style.fontSize = "40px";
     closeButton.style.color = "#fff";
     closeButton.style.backgroundColor = "transparent";

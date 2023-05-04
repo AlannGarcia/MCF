@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" href="public/img/icono.ico">
+    <meta name="description" content="Encuentra los mejores productos para panadería y repostería, como levadura, margarina, grasas, dulce de leche repostero y productos de refinería al por mayor. Nuestros productos son de alta calidad y garantizan el mejor sabor para tus creaciones. ¡Descubre nuestras opciones y haz que tus productos sean irresistibles!">
     <title>MFC</title>
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/whatsapp.css">
     <!-- FUENTES-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,21 +24,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/953976d048.js" crossorigin="anonymous"></script>
 
     <!-- Animaciones -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
 </head>
 <body style="background-color: #F1F6F9;">    
     <!-- Nadvar --> 
     <div class="container" id="ContenedorInicio">
       <nav class="navbar navbar-expand-lg navbar-light" style="background-color:trasparent;">
+        <div class="container-fluid">
         <a class="navbar-brand" href="#ContenedorInicio"><img src="./public/img/logo.png" alt="Logo de la empresa" style="width: 100px;"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto" style="font-size: 1.4em;" id="nadvar" >
             <li class="nav-item active">
@@ -53,14 +56,14 @@
             </li>
           </ul>
         </div>
+        </div>
       </nav>
     </div>
     <!-- Header -->
     <header>
-      <div class="container d-flex">
-        <span id="logoMCF" class="animate__animated animate__fadeInRight animate__delay-0.9s">M C F</span>
-        <span id="nombreMCF" class="animate__animated animate__bounceIn animate__delay-0.9s">Productos de alta calidad</span>
-        <img src="./public/img/graph (5).png" class="animate__animated animate__fadeIn animate__delay-1s	" alt="Forma para header" id="forma">
+      <div id="contenedorLogoInicio">
+        <img src="./public/img/logo.png" class="animate__animated animate__fadeInRight " alt="Forma para header" id="logoInicio">
+        <p class="animate__animated animate__fadeInLeft ">Productos de alta calidad</p>
       </div>
     </header>
 
@@ -74,7 +77,10 @@
             <img src="/public/img/undraw_team_up_re_84ok.svg" alt="Imagen svg sobre nosotros">
           </div>
           <div class=" col-md-7 col-lg-6 col-xl-5" id="textoSN">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut minus id, tempore culpa blanditiis corporis voluptatem deserunt voluptas nisi temporibus a quidem repudiandae, architecto hic explicabo nesciunt facilis quisquam fugiat. 
+            Somos una empresa de comercialización, fabricación y distribución de alimentos. <br> 
+            Nuestra responsabilidad y seriedad trabajando <span>junto a nuestros clientes</span> permitió que en sólo pocos años, seamos valorados como uno de los mayores comercializadores de insumos y servicios para la industria <span>Gastronómica, de la Panificación y Afines</span>. <br>
+            Nuestro servicio y la atención hacia el Mercado hogar y consumidores finales, nos dan ese impulso para seguir mejorando día a día y así continuar brindando soluciones a todos nuestros clientes. <br>
+            Distribuimos en forma <span>oficial y exclusiva</span>: Levaduras, Grasas, Margarinas y toda la línea de productos de <span>Refinería del Centro</span>; además de un innumerable portfolio de productos y complementos para la industria. 
           </div>
       </div>
     </section>
@@ -173,31 +179,31 @@
               <div class="info">
                 <div class="titulos">
                   <img src="/public/img/telefono.png" alt="Icono de teléfono" width="30" class="logo">
-                  <h3 class="contactoTitulo">Llamenos</h3> 
+                  <h3 class="contactoTitulo">Llámenos </h3> 
                 </div>
-                <p class="contactoInfo">+54 1169738740</p>
+                <p class="contactoInfo">+54 11 5923-3680</p>
               </div>
               <div class="info">
                 <div class="titulos">
                   <img src="/public/img/ubicacion.png" alt="Icono de teléfono" width="30" class="logo">
-                  <h3 class="contactoTitulo">Ubicacion</h3>
+                  <h3 class="contactoTitulo">Zona de entrega</h3>
                 </div>
-                <p class="contactoInfo">Cno. Gral. Manuel Belgrano km 10500, Buenos Aires, Provincia de Buenos Aires</p>
+                <p class="contactoInfo">Oficinas comerciales 2230 Quilmes, Buenos Aires, Provincia de Buenos Aires</p>
               </div>
               <div class="info">
                 <div class="titulos">
                   <img src="/public/img/reloj.png" alt="Icono de teléfono" width="30" class="logo">
                   <h3 class="contactoTitulo">Horarios de trabajo</h3>
                 </div>
-                <p class="contactoInfo">Lunes - Viernes  <span>8:00 am - 13:00 pm</span>  <br> Sabado - Domingo <span>Cerrado</span> </p>
+                <p class="contactoInfo">Lunes - Viernes  <span>8:00 am - 13:00 pm</span>  <br> Sábado - Domingo <span>Cerrado</span> </p>
               </div>
             </div>
             <div class=" col-md-7 col-lg-6 col-xl-5" id="furmularioContacto">
-              <h2 class="tituloDeFormulario">Contactanos</h2>
-              <form action="submit-form.php" method="POST">
-                <input type="text" id="name" name="name" required placeholder="Nombre" >
-                <input type="email" id="email" name="email" required placeholder="Correo electronico">
-                <textarea id="message" name="message" required placeholder="Mensaje"></textarea>
+              <h2 class="tituloDeFormulario">Contáctanos</h2>
+              <form action="/public/php/contacto.php" method="POST">
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre" >
+                <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                <textarea id="mensaje" name="mensaje" required placeholder="Mensaje"></textarea>
               
                 <button type="submit">Enviar</button>
               </form>
@@ -207,20 +213,51 @@
      </section> 
     
     <!-- Mapa para encontrarlos -->
-    <section class="container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d52466.96985409935!2d-58.34452499771612!3d-34.72571538977736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m1!2sTu%20ubicaci%C3%B3!4m5!1s0x95a32d77ed1b0789%3A0x8dea5b6a6cf435b7!2sCno.%20Gral.%20Manuel%20Belgrano%20km%2010500%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.7319299!2d-58.327358!5e0!3m2!1ses!2sar!4v1683135611662!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapaGoogle"></iframe>
+    <section class="container" id="mapaConImg">
+      <div class=" mx-auto" id="mapaConImg">
+        <div class=" row row-30 justify-content-center">
+          <div class=" col-md-7 col-lg-6 col-xl-5" id="mapaGoogle">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104915.92700876477!2d-58.2708034!3d-34.739903149999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d8521ad2c81%3A0xab17dd412d52be51!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1683213736673!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+          </div>
+          <div class=" col-sm-9 col-md-5 cube-classic-wrap " id="imagenLocation" >
+            <p>Donde <span>encontrarnos</span></p>
+            <img src="/public/img/location.svg" alt="svg de donde encontrarnos" srcset="">
+          </div>
+      </div>
+      
+      
     </section>
     <!-- Boton para ir al inicio -->
     <a href="#ContenedorInicio" class="btn-fixed">
       <img src="/public/img/flecha-hacia-arriba.png" alt="Diseñado por https://www.flaticon.es/iconos-gratis/bitcoin-arriba de www.flaticon.es" srcset="">
     </a>
+    <!-- boton para whatsapp-->
+    <a href="https://api.whatsapp.com/send?phone=541159233680" class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <!-- Footer-->
+    <footer>
+      <div class="left">
+        <h4>MCF dalli group S.A</h4>
+        <p>Oficinas comerciales 2230 Quilmes, Buenos Aires, Provincia de Buenos Aires</p>
+        <p>&copy; 2023 MCF dalli group S.A</p>
+      </div>
+      <div class="right">
+        <p>Teléfono: +54 11 5923-3680</p>
+        <p>Correo electrónico: mcflatamarg@gmail.com</p>
+        
+      </div>
+    </footer>
+    
+    
     
   
           
    <!-- JavaScript de Bootstrap -->
 <!--Boostrap js-->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 <script src="/public/js/main.js"></script>
 
 </body>
