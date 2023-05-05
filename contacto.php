@@ -20,11 +20,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         // Envía el correo electrónico
         if (mail($to, $subject, $body, $headers)) {
-            echo "Mensaje enviado con éxito";
+            header('Location: emailEnviado.html');
+            exit;
         } else {
-            echo "Hubo un error al enviar el mensaje";
+            header('Location: emailProblemas.html');
+            exit;
         }
     } else {
         echo "Todos los campos son obligatorios";
     }
-}
+}  
+
+        

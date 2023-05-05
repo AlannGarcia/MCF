@@ -330,7 +330,7 @@ html{
   
 
 /* pantallas de 480 px o menos */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 416px) {
   body{
    
       width: 100%;/* el contenedor ocupa todo el ancho de la pantalla */
